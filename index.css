@@ -28,3 +28,7 @@ body {
     background: linear-gradient(125deg, #0c14b7, #02065e);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+.container2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
