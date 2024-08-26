@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href=""<link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-950">
+  
+    <div class="text-center text-3xl h-auto w-auto">
+        <h1 class="text-red-800 text-5xl extrabold p-5 font-[Poppins]">SEIVAR</h1>
+        <p class="text-white text-4xl bold font-[Poppins]">Worker Register</p>
+        <p  class="text-white text-2xl p-3 font-[Poppins]">Register as new Seivar</p>
+    </div>
+   
+    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-end ">
+        
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 font-semibold">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="email" class="block text-gray-700 font-semibold">Email/Phone no:</label>
+                <input type="text" id="email" placeholder="Enter email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="password" class="block text-gray-700 font-semibold">New password:</label>
+                <input type="password" id="password" placeholder="Set your password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="confirm-password" class="block text-gray-700 font-semibold">Re-enter password:</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="proof" class="block text-gray-700 font-semibold">Upload proof:</label>
+                <input type="file" id="proof" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <p class="text-sm text-gray-500 mt-1">Upload your doc e.g.: Aadhar/passport</p>
+            </div>
+
+            <div class="flex items-center">
+                <i class="fa-solid fa-location-dot"></i>&nbsp
+                <label for="location-access" class="text-green-600 font-semibold">Allow Location access!</label>
+            </div>
+
+            <button type="submit" class="w-auto h-auto p-3 rounded-2xl bg-blue-900 text-white">Submit</button>
+
+   </div>
+</body>

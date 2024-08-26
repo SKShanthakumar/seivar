@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div style="position: absolute; top: 10px; left: 10px; z-index: 1000">
+      <img
+        src="./SEIVAR.png"
+        alt=""
+        style="width: 200px; height: 80px"
+      />
+    </div>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <div class="form">
+          <h1>Create Account</h1>
+          <input type="text" placeholder="Username*" id="username" required />
+          <input type="email" placeholder="Email*" id="email" required />
+          <input
+            type="password"
+            placeholder="Password*"
+            id="password"
+            required
+          />
+          <button style="color: white;"><a href="home.html" style="color: white">Sign Up</a></button>
+        </div>
+      </div>
+      <div class="form-container sign-in">
+        <div class="form">
+          <h1>Sign In</h1>
+          <input type="email" placeholder="Email" id="emailSignIn" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="passwordSignIn"
+            required
+          />
+          <a href="#">Forget Your Password?</a>
+          <button onclick="signin()">Sign In</button>
+        </div>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>
+              Register with your personal details to use all of site features
+            </p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const container = document.getElementById("container");
+      const registerBtn = document.getElementById("register");
+      const loginBtn = document.getElementById("login");
+
+      registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+      });
+
+      loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+      });
+
+      function signin() {
+        alert("You have successfully signedin,Signup to explore");
+      }
+    </script>
+  </body>
+</html>
